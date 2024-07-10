@@ -21,6 +21,17 @@ const PostApiData = async (endPoint, data) => {
   return response;
 };
 
+const updateApiDataById = async (endPoint, id, data) => {
+  let response = await fetch(`${BaseURL}/${endPoint}/${id}`, {
+    method: "PUT",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  return response;
+};
+
 const DeleteApiDataById = async (endPoint, id) => {
   let response = await fetch(`${BaseURL}/${endPoint}/${id}`, {
     method: "DELETE",
