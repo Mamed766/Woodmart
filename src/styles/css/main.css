@@ -1,5 +1,27 @@
 .navbar {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar__start ul {
+  display: flex;
+  gap: 1rem;
+}
+.navbar__start ul li:first-child {
+  display: flex;
+  gap: 0.2rem;
+}
+.navbar__start ul li:first-child span {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  color: gray;
+}
+.navbar__logo svg {
+  height: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
