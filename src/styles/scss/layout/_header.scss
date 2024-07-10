@@ -31,4 +31,15 @@
       height: 2rem;
     }
   }
+
+  &__end {
+    ul {
+      display: flex;
+      gap: 1rem;
+      li {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
 }

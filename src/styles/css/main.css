@@ -23,5 +23,13 @@
 .navbar__logo svg {
   height: 2rem;
 }
+.navbar__end ul {
+  display: flex;
+  gap: 1rem;
+}
+.navbar__end ul li {
+  display: flex;
+  gap: 0.5rem;
+}
 
 /*# sourceMappingURL=main.css.map */
