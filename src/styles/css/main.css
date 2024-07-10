@@ -16,9 +16,10 @@ body {
   z-index: 999;
   justify-content: space-around;
   align-items: center;
-  margin-top: 2rem;
   width: 100%;
+  padding-top: 2rem;
   position: fixed;
+  top: 0;
 }
 .navbar ul {
   list-style: none;
