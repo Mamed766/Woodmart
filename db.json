@@ -1,44 +1,40 @@
 {
   "data": [
     {
+      "id": "fc53",
       "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "productDiscount": "sad",
-      "productDate": "sad",
-      "productName": "Golden Parte",
-      "productPrice": "79.00",
-      "productRating": "asd"
-    },
-    {
-      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "productDiscount": "sad",
-      "productDate": "sad",
-      "productName": "Golden Parte",
-      "productPrice": "79.00",
-      "productRating": "asd"
-    },
-    {
-      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "productDiscount": "",
+      "productDiscount": "-15%",
       "productDate": "",
-      "productName": "Golden Parte",
-      "productPrice": "79.00",
-      "productRating": "asd"
+      "productName": "Golden Petra",
+      "productPrice": "79",
+      "productRating": "3"
     },
     {
+      "id": "73ff",
       "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "productDiscount": "",
+      "productDiscount": "-15%",
       "productDate": "",
-      "productName": "Golden Parte",
-      "productPrice": "79.00",
-      "productRating": "asd"
+      "productName": "asdsad",
+      "productPrice": "assad",
+      "productRating": "5"
     },
     {
+      "id": "cecb",
       "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "productDiscount": "",
+      "productDiscount": "-15%",
       "productDate": "",
-      "productName": "Golden Parte",
-      "productPrice": "79.00",
-      "productRating": "asd"
+      "productName": "ASDSAD",
+      "productPrice": "asdasd",
+      "productRating": "5"
+    },
+    {
+      "id": "c943",
+      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
+      "productDiscount": "-15%",
+      "productDate": "",
+      "productName": "daaa",
+      "productPrice": "1111",
+      "productRating": "4"
     }
   ]
 }

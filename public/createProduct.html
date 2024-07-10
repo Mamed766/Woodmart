@@ -11,15 +11,30 @@
       <div class="products__panel--title">Create Products!</div>
 
       <div class="products__panel--inputs">
-        <input type="text" id="productSrc" />
-        <input type="text" id="productDiscount" />
-        <input type="text" id="productDate" />
-        <input type="text" id="productName" />
-        <input type="text" id="productPrice" />
-        <input type="text" id="productRating" />
+        <input type="text" id="productSrc" placeholder="Src" />
+        <input
+          type="text"
+          id="productDiscount"
+          placeholder="Discount if have"
+        />
+        <input
+          type="text"
+          id="productDate"
+          placeholder="If its new you can enter New"
+        />
+        <input type="text" id="productName" placeholder="productName" />
+        <input type="text" id="productPrice" placeholder="ProductPrice" />
+        <input
+          type="text"
+          id="productRating"
+          placeholder="ProductRating"
+          min="0"
+          max="5"
+        />
       </div>
 
       <button id="createProductButton">Create!</button>
     </form>
+    <script src="../src/js/script.js"></script>
   </body>
 </html>
