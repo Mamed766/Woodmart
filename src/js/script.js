@@ -33,3 +33,5 @@ var newSwiper = new Swiper(".productSwiper", {
     },
   },
 });
+
+// Get api
