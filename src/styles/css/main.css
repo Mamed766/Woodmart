@@ -342,6 +342,10 @@ body {
   transform: translateY(20px);
 }
 
+.product__price {
+  color: #5e6821;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
