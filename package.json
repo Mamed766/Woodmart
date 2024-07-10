@@ -4,6 +4,7 @@
     "start": "json-server --watch db.json --port 3000"
   },
   "dependencies": {
+    "json-server": "^1.0.0-beta.1",
     "sass": "^1.77.7",
     "scss": "^0.2.4"
   }
