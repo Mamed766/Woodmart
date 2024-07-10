@@ -31,6 +31,9 @@ body {
 .navbar ul li:hover {
   color: gray;
 }
+.navbar ul li:hover h5 {
+  color: black;
+}
 .navbar__hover li:hover {
   opacity: 0.8;
 }
@@ -68,7 +71,7 @@ body {
   z-index: 999;
   visibility: hidden;
   position: absolute;
-  top: 4rem;
+  top: 6rem;
   background-color: white;
   width: 200rem;
   transform: translateX(-60rem);

@@ -19,6 +19,9 @@
 
       &:hover {
         color: gray;
+        h5 {
+          color: black;
+        }
       }
     }
   }
@@ -74,9 +77,10 @@
   &__hover {
     opacity: 1;
     z-index: 999;
+
     visibility: hidden;
     position: absolute;
-    top: 4rem;
+    top: 6rem;
     background-color: white;
     width: 200rem;
     transform: translateX(-60rem);
