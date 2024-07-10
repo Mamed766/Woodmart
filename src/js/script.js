@@ -68,7 +68,7 @@ getApiDataWithCallBack("data", (data) => {
                </div>
              </div>
              <div class="slider__content">
-               <h4>Golden Petra</h4>
+               <h4>${item.productName}</h4>
                <p class="productStars">
                ${createStars(item.productRating)}
                

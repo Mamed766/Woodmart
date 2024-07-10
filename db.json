@@ -1,39 +1,66 @@
 {
   "data": [
     {
-      "id": "fc53",
+      "id": "2b59",
       "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "productDiscount": "-15%",
+      "productDiscount": "",
       "productDate": "",
       "productName": "Golden Petra",
       "productPrice": "79",
       "productRating": "3"
     },
     {
-      "id": "73ff",
-      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
+      "id": "d43b",
+      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-8-0.jpg",
       "productDiscount": "-15%",
       "productDate": "",
-      "productName": "asdsad",
-      "productPrice": "assad",
+      "productName": "Peperomia Obtusifolia",
+      "productPrice": "66",
       "productRating": "5"
     },
     {
-      "id": "cecb",
-      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "productDiscount": "-15%",
+      "id": "b2b9",
+      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-3-0.jpg",
+      "productDiscount": "",
       "productDate": "",
-      "productName": "ASDSAD",
-      "productPrice": "asdasd",
-      "productRating": "5"
+      "productName": "Pink Rubber Plant",
+      "productPrice": "139",
+      "productRating": "4"
     },
     {
-      "id": "c943",
-      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
-      "productDiscount": "-15%",
+      "id": "c388",
+      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-7-0.jpg",
+      "productDiscount": "",
+      "productDate": "NEW",
+      "productName": "Ficus Audrey",
+      "productPrice": "130",
+      "productRating": "3"
+    },
+    {
+      "id": "3872",
+      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-large-1-0.jpg",
+      "productDiscount": "",
       "productDate": "",
-      "productName": "daaa",
-      "productPrice": "1111",
+      "productName": "Schefflera Tree",
+      "productPrice": "285",
+      "productRating": "3"
+    },
+    {
+      "id": "6d38",
+      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-10-0.jpg",
+      "productDiscount": "",
+      "productDate": "",
+      "productName": "Rubber Plant",
+      "productPrice": "65",
+      "productRating": "3"
+    },
+    {
+      "id": "5668",
+      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-2-0.jpg",
+      "productDiscount": "-25%",
+      "productDate": "NEW",
+      "productName": "Autumn Fern",
+      "productPrice": "48",
       "productRating": "4"
     }
   ]
