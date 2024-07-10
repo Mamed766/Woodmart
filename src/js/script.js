@@ -47,6 +47,15 @@ const getApiDataWithCallBack = async (endPoint, cb) => {
   cb(response);
 };
 
+const PostApiData = async (endPoint, data) => {
+  let response = await fetch(`${BaseURL}/${endPoint}`, {
+    method: "POST",
+    body: JSON.stringify(data),
+  });
+
+  return response;
+};
+
 getApiDataWithCallBack("data", (data) => {
   data.map((item) => {
     swiperContainer.innerHTML += `

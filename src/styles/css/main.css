@@ -398,5 +398,38 @@ body {
     transform: translateY(-40px);
   }
 }
+.products__panel {
+  background: linear-gradient(to bottom right, rgb(94, 104, 33), rgba(94, 104, 33, 0.5), rgba(94, 104, 33, 0));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.products__panel--title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.products__panel--inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.products__panel--inputs input {
+  border-radius: 0.5rem;
+  border: 1px solid #e3e3e3;
+  padding: 8px 16px;
+  outline: none;
+  width: 50rem;
+}
+.products__panel button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 0.8rem;
+  border: none;
+  color: white;
+  background-color: #5e6821;
+}
 
 /*# sourceMappingURL=main.css.map */
