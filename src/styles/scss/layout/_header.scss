@@ -1,5 +1,6 @@
 .navbar {
   display: flex;
+
   justify-content: space-around;
   align-items: center;
   margin-top: 2rem;
@@ -32,6 +33,14 @@
             &:hover {
               .navbar__hover {
                 display: flex;
+                visibility: visible;
+                animation: fade-in 0.5s ease forwards;
+              }
+            }
+            &:not(:hover) {
+              .navbar__hover {
+                display: flex;
+                animation: fade-out 0.5s ease forwards;
               }
             }
 
@@ -49,7 +58,8 @@
   }
 
   &__hover {
-    display: none;
+    // display: none;
+    visibility: hidden;
     position: absolute;
     top: 4rem;
     background-color: white;
@@ -59,10 +69,20 @@
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    img {
-      height: 5rem;
+
+    &--img {
+      height: 7rem;
+      width: 5rem;
       border-radius: 4rem;
+
+      img {
+        height: 5rem;
+        width: 5rem;
+        object-fit: cover;
+        border-radius: 4rem;
+      }
     }
+
     cursor: default;
     li {
       display: flex;
@@ -93,5 +113,27 @@
         cursor: pointer;
       }
     }
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+
+    transform: translate(-60rem, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-60rem, 0);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translate(-60rem, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-60rem, -20px);
   }
 }

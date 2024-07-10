@@ -42,6 +42,12 @@ body {
 }
 .navbar__start ul:first-child li:first-child:hover .navbar__hover {
   display: flex;
+  visibility: visible;
+  animation: fade-in 0.5s ease forwards;
+}
+.navbar__start ul:first-child li:first-child:not(:hover) .navbar__hover {
+  display: flex;
+  animation: fade-out 0.5s ease forwards;
 }
 .navbar__start ul:first-child li:first-child span {
   display: flex;
@@ -51,7 +57,7 @@ body {
   color: gray;
 }
 .navbar__hover {
-  display: none;
+  visibility: hidden;
   position: absolute;
   top: 4rem;
   background-color: white;
@@ -63,8 +69,15 @@ body {
   gap: 10rem;
   cursor: default;
 }
-.navbar__hover img {
+.navbar__hover--img {
+  height: 7rem;
+  width: 5rem;
+  border-radius: 4rem;
+}
+.navbar__hover--img img {
   height: 5rem;
+  width: 5rem;
+  object-fit: cover;
   border-radius: 4rem;
 }
 .navbar__hover li {
@@ -91,6 +104,27 @@ body {
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(-60rem, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-60rem, 0);
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translate(-60rem, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-60rem, -20px);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
