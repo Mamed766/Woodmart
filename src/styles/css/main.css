@@ -12,6 +12,8 @@ body {
 
 .navbar {
   display: flex;
+  background-color: #f6f3ed;
+  z-index: 999;
   justify-content: space-around;
   align-items: center;
   margin-top: 2rem;
@@ -26,6 +28,9 @@ body {
   height: 3rem;
 }
 .navbar ul li:hover {
+  color: gray;
+}
+.navbar__hover li:hover {
   opacity: 0.8;
 }
 .navbar__start ul:first-child {
@@ -43,6 +48,7 @@ body {
 .navbar__start ul:first-child li:first-child:hover .navbar__hover {
   display: flex;
   visibility: visible;
+  opacity: 2;
   animation: fade-in 0.2s ease forwards;
 }
 .navbar__start ul:first-child li:first-child:not(:hover) .navbar__hover {
@@ -57,6 +63,8 @@ body {
   color: gray;
 }
 .navbar__hover {
+  opacity: 1;
+  z-index: 999;
   visibility: hidden;
   position: absolute;
   top: 4rem;
@@ -142,6 +150,14 @@ body {
   align-items: center;
   width: 50%;
 }
+.introduction__card--list::after {
+  content: "";
+  display: block;
+  margin-left: 10rem;
+  height: 100%;
+  width: 2px;
+  background-color: #5e6821;
+}
 .introduction__card--list ul {
   display: flex;
   flex-direction: column;
@@ -158,10 +174,6 @@ body {
 }
 .introduction__card--list ul li i {
   transform: rotate(45deg);
-}
-
-.mySwiper {
-  border-left: 2px solid #5e6821;
 }
 
 .swiper {

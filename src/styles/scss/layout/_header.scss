@@ -1,5 +1,8 @@
+@use "../utils/" as *;
 .navbar {
   display: flex;
+  background-color: $bodyColor;
+  z-index: 999;
 
   justify-content: space-around;
   align-items: center;
@@ -12,6 +15,15 @@
     li {
       transition: all 0.25s ease-in-out;
       height: 3rem;
+
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+
+  &__hover {
+    li {
       &:hover {
         opacity: 0.8;
       }
@@ -34,6 +46,7 @@
               .navbar__hover {
                 display: flex;
                 visibility: visible;
+                opacity: 2;
                 animation: fade-in 0.2s ease forwards;
               }
             }
@@ -58,7 +71,8 @@
   }
 
   &__hover {
-    // display: none;
+    opacity: 1;
+    z-index: 999;
     visibility: hidden;
     position: absolute;
     top: 4rem;

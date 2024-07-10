@@ -2,7 +2,6 @@
 
 .introduction {
   padding: 10% 7.5%;
-
   &__card {
     height: 43rem;
     display: flex;
@@ -16,6 +15,16 @@
       width: 50%;
 
       //   border-right: 2px solid $green;
+
+      &::after {
+        content: "";
+        display: block;
+        margin-left: 10rem;
+        height: 100%;
+        width: 2px;
+        background-color: $green;
+      }
+
       ul {
         display: flex;
         flex-direction: column;
@@ -38,10 +47,6 @@
       }
     }
   }
-}
-
-.mySwiper {
-  border-left: 2px solid $green;
 }
 
 .swiper {
