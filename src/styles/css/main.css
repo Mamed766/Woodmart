@@ -152,12 +152,12 @@ body {
 .introduction__card--list {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 60rem;
 }
 .introduction__card--list::after {
   content: "";
   display: block;
-  margin-left: 10rem;
+  margin-left: 5rem;
   height: 100%;
   width: 2px;
   background-color: #5e6821;
@@ -181,7 +181,7 @@ body {
 }
 
 .swiper {
-  width: 100%;
+  width: 150rem;
   height: 100%;
   cursor: grab;
 }
@@ -211,6 +211,31 @@ body {
 }
 .swiper__content button:hover {
   opacity: 0.9;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper {
+  width: 150rem;
+}
+
+.productSwiper {
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
