@@ -233,9 +233,27 @@ body {
   width: 150rem;
 }
 
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
 .productSwiper {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+.slider button {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  background-color: #5e6821;
 }
 
 .swiper-slide {
