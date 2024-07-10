@@ -33,7 +33,6 @@ var newSwiper = new Swiper(".productSwiper", {
     },
   },
 });
-
 // Get api
 let BaseURL = "http://localhost:3000";
 
@@ -55,6 +54,8 @@ getApiDataWithCallBack("data", (data) => {
               <div class="slider__dropdown">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 <button>Delete</button>
+                <button class="add__new--product__btn">New</button>
+
               </div>
               <div class="slider__image">
                 <img
@@ -88,5 +89,12 @@ getApiDataWithCallBack("data", (data) => {
               </div>
             </div>
     `;
+
+    const addProductBtn = document.querySelectorAll(".add__new--product__btn");
+    addProductBtn.forEach((btn) =>
+      btn.addEventListener("click", () => {
+        window.open("createProduct.html", "_blank");
+      })
+    );
   });
 });
