@@ -2,31 +2,81 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  margin-top: 2rem;
+  width: 100%;
+  position: fixed;
   ul {
     list-style: none;
+
+    li {
+      transition: all 0.25s ease-in-out;
+      height: 3rem;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 
   &__start {
     ul {
-      display: flex;
-      gap: 1rem;
-      li {
-        &:first-child {
-          display: flex;
-          gap: 0.2rem;
-          span {
+      &:first-child {
+        display: flex;
+        gap: 1rem;
+        li {
+          cursor: pointer;
+          margin-top: 1rem;
+          &:first-child {
             display: flex;
-            align-items: center;
-            font-size: 11px;
-            color: gray;
+            gap: 0.2rem;
+
+            &:hover {
+              .navbar__hover {
+                display: flex;
+              }
+            }
+
+            span {
+              display: flex;
+              justify-content: center;
+              margin-top: 0.5rem;
+              font-size: 11px;
+              color: gray;
+            }
           }
         }
       }
     }
   }
 
+  &__hover {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    background-color: white;
+    width: 200rem;
+    transform: translateX(-60rem);
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    img {
+      height: 5rem;
+      border-radius: 4rem;
+    }
+    cursor: default;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
   &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     svg {
       height: 2rem;
     }
@@ -38,7 +88,9 @@
       gap: 1rem;
       li {
         display: flex;
+        align-items: center;
         gap: 0.5rem;
+        cursor: pointer;
       }
     }
   }

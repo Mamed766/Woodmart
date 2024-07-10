@@ -3,29 +3,81 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #f6f3ed;
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  position: fixed;
 }
 .navbar ul {
   list-style: none;
 }
-.navbar__start ul {
+.navbar ul li {
+  transition: all 0.25s ease-in-out;
+  height: 3rem;
+}
+.navbar ul li:hover {
+  opacity: 0.8;
+}
+.navbar__start ul:first-child {
   display: flex;
   gap: 1rem;
 }
-.navbar__start ul li:first-child {
+.navbar__start ul:first-child li {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.navbar__start ul:first-child li:first-child {
   display: flex;
   gap: 0.2rem;
 }
-.navbar__start ul li:first-child span {
+.navbar__start ul:first-child li:first-child:hover .navbar__hover {
   display: flex;
-  align-items: center;
+}
+.navbar__start ul:first-child li:first-child span {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
   font-size: 11px;
   color: gray;
+}
+.navbar__hover {
+  display: none;
+  position: absolute;
+  top: 4rem;
+  background-color: white;
+  width: 200rem;
+  transform: translateX(-60rem);
+  height: 15rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  cursor: default;
+}
+.navbar__hover img {
+  height: 5rem;
+  border-radius: 4rem;
+}
+.navbar__hover li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navbar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .navbar__logo svg {
   height: 2rem;
@@ -36,7 +88,9 @@
 }
 .navbar__end ul li {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
