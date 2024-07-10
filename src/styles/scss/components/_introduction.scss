@@ -1,0 +1,66 @@
+@use "../utils/" as *;
+
+.introduction {
+  padding: 10% 7.5%;
+
+  &__card {
+    height: 43rem;
+    display: flex;
+    padding: 4rem;
+    border-top: 2px solid $green;
+    border-bottom: 2px solid $green;
+    gap: 2rem;
+    &--list {
+      display: flex;
+      align-items: center;
+      width: 50%;
+
+      //   border-right: 2px solid $green;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        list-style: none;
+        font-size: 30px;
+
+        li {
+          cursor: pointer;
+          transition: all 0.25s ease-in-out;
+
+          &:hover {
+            color: $green;
+          }
+
+          i {
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.mySwiper {
+  border-left: 2px solid $green;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

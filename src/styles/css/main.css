@@ -43,7 +43,7 @@ body {
 .navbar__start ul:first-child li:first-child:hover .navbar__hover {
   display: flex;
   visibility: visible;
-  animation: fade-in 0.5s ease forwards;
+  animation: fade-in 0.2s ease forwards;
 }
 .navbar__start ul:first-child li:first-child:not(:hover) .navbar__hover {
   display: flex;
@@ -125,6 +125,64 @@ body {
     opacity: 0;
     transform: translateY(-60rem, -20px);
   }
+}
+.introduction {
+  padding: 10% 7.5%;
+}
+.introduction__card {
+  height: 43rem;
+  display: flex;
+  padding: 4rem;
+  border-top: 2px solid #5e6821;
+  border-bottom: 2px solid #5e6821;
+  gap: 2rem;
+}
+.introduction__card--list {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.introduction__card--list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 30px;
+}
+.introduction__card--list ul li {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.introduction__card--list ul li:hover {
+  color: #5e6821;
+}
+.introduction__card--list ul li i {
+  transform: rotate(45deg);
+}
+
+.mySwiper {
+  border-left: 2px solid #5e6821;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

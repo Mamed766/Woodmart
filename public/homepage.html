@@ -11,6 +11,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="../src/styles/css/main.css" />
   </head>
   <body>
@@ -154,5 +159,36 @@
         </div>
       </nav>
     </header>
+    <main>
+      <section class="introduction">
+        <div class="introduction__card">
+          <div class="introduction__card--list">
+            <ul>
+              <li>Plants <i class="fa-solid fa-arrow-up"></i></li>
+              <li>Planters <i class="fa-solid fa-arrow-up"></i></li>
+              <li>Plamt Care <i class="fa-solid fa-arrow-up"></i></li>
+              <li>Gift ideas <i class="fa-solid fa-arrow-up"></i></li>
+              <li>Pet friendly <i class="fa-solid fa-arrow-up"></i></li>
+            </ul>
+          </div>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../src/assets/images/img1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../src/assets/images/img2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../src/assets/images/img3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../src/js/script.js"></script>
   </body>
 </html>
