@@ -1,0 +1,104 @@
+@use "../utils/" as *;
+
+.explore {
+  margin-top: 3rem;
+  padding: 2% 3%;
+  background: linear-gradient(to bottom, #5f6921 60%, white 40%);
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    &--title {
+      width: 48rem;
+      color: white;
+      h1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 50px;
+      }
+
+      &__flower {
+        width: 145px;
+        height: 60px;
+        background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-1.png.webp");
+        background-repeat: no-repeat;
+      }
+
+      &__plant {
+        width: 145px;
+        height: 60px;
+        background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-2.png.webp");
+        background-repeat: no-repeat;
+      }
+
+      &__plant--second {
+        width: 145px;
+        height: 60px;
+        background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-3.png");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--cards {
+      display: flex;
+      gap: 2rem;
+      //   flex-wrap: wrap;
+      width: 100%;
+      &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        height: 30%;
+        width: 30rem;
+        padding: 2rem 2rem;
+        background-color: $palegreen;
+
+        &--title {
+          font-size: 26px;
+        }
+
+        &--author {
+          border-top: 2px solid $green;
+          padding-top: 1rem;
+          display: flex;
+          gap: 2rem;
+          p {
+            color: gray;
+          }
+        }
+      }
+
+      &__card--second {
+        position: relative;
+
+        &__video {
+          height: 30rem;
+          width: 100%;
+          overflow: hidden;
+
+          img {
+            width: 50rem;
+            height: 25.3rem;
+            object-fit: cover;
+          }
+          a {
+            font-size: 80px;
+            color: $green;
+            transition: all 0.25s ease-in-out;
+            &:hover {
+              opacity: 0.9;
+            }
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -80%);
+          }
+        }
+      }
+    }
+  }
+}

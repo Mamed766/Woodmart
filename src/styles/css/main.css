@@ -634,4 +634,96 @@ body {
   background-color: transparent;
 }
 
+.explore {
+  margin-top: 3rem;
+  padding: 2% 3%;
+  background: linear-gradient(to bottom, #5f6921 60%, white 40%);
+}
+.explore__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.explore__container--title {
+  width: 48rem;
+  color: white;
+}
+.explore__container--title h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 50px;
+}
+.explore__container--title__flower {
+  width: 145px;
+  height: 60px;
+  background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-1.png.webp");
+  background-repeat: no-repeat;
+}
+.explore__container--title__plant {
+  width: 145px;
+  height: 60px;
+  background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-2.png.webp");
+  background-repeat: no-repeat;
+}
+.explore__container--title__plant--second {
+  width: 145px;
+  height: 60px;
+  background-image: url("https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/ps-top-min-3.png");
+  background-repeat: no-repeat;
+}
+.explore__container--cards {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+.explore__container--cards__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 30%;
+  width: 30rem;
+  padding: 2rem 2rem;
+  background-color: #e7e5d9;
+}
+.explore__container--cards__card--title {
+  font-size: 26px;
+}
+.explore__container--cards__card--author {
+  border-top: 2px solid #5e6821;
+  padding-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.explore__container--cards__card--author p {
+  color: gray;
+}
+.explore__container--cards__card--second {
+  position: relative;
+}
+.explore__container--cards__card--second__video {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+.explore__container--cards__card--second__video img {
+  width: 50rem;
+  height: 25.3rem;
+  object-fit: cover;
+}
+.explore__container--cards__card--second__video a {
+  font-size: 80px;
+  color: #5e6821;
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -80%);
+}
+.explore__container--cards__card--second__video a:hover {
+  opacity: 0.9;
+}
+
 /*# sourceMappingURL=main.css.map */
