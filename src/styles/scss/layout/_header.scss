@@ -138,6 +138,7 @@
 // #cartModal {
 //   margin-top: 20rem;
 // }
+
 .modal {
   display: none;
   position: fixed;
@@ -154,10 +155,20 @@
 
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto;
+  // margin: 5% auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 40%;
+
+  .shopping__cart {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .close {
@@ -172,6 +183,37 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 1rem;
+
+  img {
+    object-fit: cover;
+    height: 7rem;
+    width: 7rem;
+  }
+
+  &__first {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  div {
+    button {
+      cursor: pointer;
+      width: 7rem;
+      background-color: $green;
+      color: white;
+      padding: 4px 8px;
+      border: none;
+      border-radius: 0.8rem;
+    }
+  }
 }
 
 @keyframes fade-in {

@@ -90,7 +90,7 @@ const renderProducts = (data) => {
           <p class="product__price">$${item.productPrice}</p>
           <button class="product__button" data-id="${item.id}" data-name="${
       item.productName
-    }" data-price="${item.productPrice}">
+    }" data-price="${item.productPrice}" data-image=${item.imageSrc}>
             <div class="product__button--add">Add to Cart</div>
             <div class="product__button--shop">
               <i class="fa-solid fa-cart-shopping"></i>
@@ -132,6 +132,7 @@ const attachEventListeners = () => {
       const productId = e.currentTarget.getAttribute("data-id");
       const productName = e.currentTarget.getAttribute("data-name");
       const productPrice = e.currentTarget.getAttribute("data-price");
+      const productImage = e.currentTarget.getAttribute("data-image");
 
       console.log("Add to Cart Clicked:", {
         productId,
@@ -144,6 +145,7 @@ const attachEventListeners = () => {
           id: productId,
           name: productName,
           price: productPrice,
+          image: productImage,
         };
         addToCart(product);
         updateCartIcon();
@@ -178,19 +180,32 @@ const openCartModal = () => {
   const cartItemsContainer = document.getElementById("cartItems");
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  cartItemsContainer.innerHTML = ""; // Clear existing items
+  cartItemsContainer.innerHTML = "";
 
   if (cart.length === 0) {
     cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
   } else {
     cart.forEach((item, index) => {
       cartItemsContainer.innerHTML += `
-        <div class="cart-item">
+  <div class="cart-item">
+         <img src="${item.image}" alt="Product Image">
+
+     <div class="cart-item__first">
+       <div>
           <p>Name: ${item.name}</p>
           <p>Price: $${item.price}</p>
-           <button class="remove-from-cart" data-index="${index}" >Remove</button>
-            
         </div>
+
+        <div>
+        <button class="remove-from-cart" data-index="${index}" >Remove</button>
+        
+        </div>
+
+
+
+       </div>
+            
+    </div>
       `;
 
       const removeButtons =
