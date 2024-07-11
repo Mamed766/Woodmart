@@ -162,6 +162,22 @@ body {
   cursor: pointer;
 }
 
+#cartItems {
+  height: 70%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #5e6821 #729762;
+}
+#cartItems ::-webkit-scrollbar-track {
+  background-color: #404040;
+}
+#cartItems ::-webkit-scrollbar-thumb {
+  background-color: #737272;
+  border-radius: 10px;
+  border: 1px solid #000;
+  width: 2px !important;
+}
+
 .cart-item {
   display: flex;
   align-items: center;
@@ -186,6 +202,45 @@ body {
   padding: 4px 8px;
   border: none;
   border-radius: 0.8rem;
+}
+
+.cash {
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+}
+.cash__total {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  justify-content: space-between;
+}
+.cash__buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.cash__buttons--view {
+  background-color: #212529;
+  transition: all 0.25s ease-in-out;
+}
+.cash__buttons--view:hover {
+  background-color: #000;
+}
+.cash__buttons--check {
+  background-color: #5e6821;
+  transition: all 0.25s ease-in-out;
+}
+.cash__buttons--check:hover {
+  background-color: #12372a;
+}
+.cash__buttons button {
+  cursor: pointer;
+  border: none;
+  padding: 8px 16px;
+  color: white;
 }
 
 @keyframes fade-in {
