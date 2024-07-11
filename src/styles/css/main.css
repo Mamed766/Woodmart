@@ -641,7 +641,7 @@ body {
 .explore {
   margin-top: 3rem;
   padding: 2% 3%;
-  background: linear-gradient(to bottom, #5f6921 60%, white 40%);
+  background: linear-gradient(to bottom, #5f6921 60%, #f6f3ed 40%);
 }
 .explore__container {
   display: flex;
