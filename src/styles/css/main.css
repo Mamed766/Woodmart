@@ -284,6 +284,75 @@ body {
     transform: translateY(-60rem, -20px);
   }
 }
+.footer {
+  padding: 2% 4%;
+}
+.footer ul {
+  list-style: none;
+}
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5rem;
+  border-bottom: 2px solid #5e6821;
+  padding-bottom: 4rem;
+}
+.footer__container--first {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-right: 2rem;
+  border-right: 2px solid #5e6821;
+}
+.footer__container--first__form form {
+  display: flex;
+  gap: 0.5rem;
+}
+.footer__container--first__form form input {
+  border: none;
+  outline: none;
+  width: 16rem;
+  padding: 8px 16px;
+  background-color: #e7e5d9;
+}
+.footer__container--first__form form button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #5e6821;
+  padding: 8px 16px;
+}
+.footer__container--first__desc {
+  color: gray;
+  width: 30rem;
+}
+.footer__container--first__logos ul {
+  display: flex;
+  gap: 1rem;
+}
+.footer__container--first__logos ul li {
+  cursor: pointer;
+  color: #5e6821;
+  font-size: 30px;
+}
+.footer__container--second {
+  display: flex;
+  gap: 2rem;
+}
+.footer__container--second ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer__container--second ul li {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.footer__container--second ul li:hover {
+  color: #5e6821;
+}
+
 .introduction {
   padding: 10% 7.5%;
 }
