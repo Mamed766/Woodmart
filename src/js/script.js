@@ -245,7 +245,9 @@ const updateCartIcon = () => {
   console.log(cartTotal);
 
   const cartIcon = document.querySelector(".payment");
+  const subTotal = document.querySelector(".cash__total--subtotal");
   cartIcon.innerHTML = `${cartCount} / $${cartTotal}`;
+  subTotal.innerHTML = `$${cartTotal}`;
 };
 
 document.addEventListener("DOMContentLoaded", updateCartIcon);
