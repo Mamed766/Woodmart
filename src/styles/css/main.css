@@ -3,11 +3,11 @@
   color: gold;
 }
 
-.responsive-grid-plants {
+.responsive-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 30rem));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 1.2rem;
 }
 
 * {
@@ -731,7 +731,7 @@ body {
 }
 
 .flowering {
-  padding: 2% 8%;
+  padding: 2% 5%;
 }
 .flowering__container .flowering__title {
   display: flex;
