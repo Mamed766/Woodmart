@@ -10,15 +10,20 @@
     }
 
     &--cards {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
       padding: 2rem 0;
       border-top: 2px solid $green;
       border-bottom: 2px solid $green;
 
       &__card {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: 2rem;
-
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #e3e3e3;
         &:hover {
           .articles__container--cards__card--img img {
             transform: scale(1.1);
@@ -103,7 +108,7 @@
 
           &__name {
             font-size: 23px;
-            width: 90%;
+            width: 45rem;
 
             h2 {
               transition: all 0.25s ease-in-out;
@@ -116,6 +121,8 @@
         }
 
         &--btn {
+          display: flex;
+          align-self: center;
           button {
             width: 10rem;
             cursor: pointer;

@@ -840,14 +840,20 @@ body {
   padding-bottom: 2rem;
 }
 .articles__container--cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   padding: 2rem 0;
   border-top: 2px solid #5e6821;
   border-bottom: 2px solid #5e6821;
 }
 .articles__container--cards__card {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e3e3e3;
 }
 .articles__container--cards__card:hover .articles__container--cards__card--img img {
   transform: scale(1.1);
@@ -921,7 +927,7 @@ body {
 }
 .articles__container--cards__card--content__name {
   font-size: 23px;
-  width: 90%;
+  width: 45rem;
 }
 .articles__container--cards__card--content__name h2 {
   transition: all 0.25s ease-in-out;
@@ -929,6 +935,10 @@ body {
 }
 .articles__container--cards__card--content__name h2:hover {
   opacity: 0.8;
+}
+.articles__container--cards__card--btn {
+  display: flex;
+  align-self: center;
 }
 .articles__container--cards__card--btn button {
   width: 10rem;
