@@ -76,7 +76,9 @@ const renderProducts = (data) => {
         <div class="slider__image">
           <img src="${item.imageSrc}" alt="" />
           <div class="slider__image--discount">
-            <span class="">${item.productDiscount}</span>
+            <span class="">${
+              item.productDiscount ? `-${item.productDiscount}%` : ""
+            }</span>
           </div>
           <div class="slider__image--date">
             <span class="">${item.productDate}</span>
@@ -267,16 +269,24 @@ productCreateBtn &&
   productCreateBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
-    const productData = {
-      imageSrc: productSrc.value,
-      productDiscount: productDiscount.value,
-      productDate: productDate.value,
-      productName: productName.value,
-      productPrice: productPrice.value,
-      productRating: productRating.value,
-    };
-
-    PostApiData("data", productData);
+    if (
+      productSrc.value.trim() !== "" &&
+      productName.value.trim() !== "" &&
+      productPrice.value.trim() !== "" &&
+      productRating.value.trim() !== ""
+    ) {
+      const productData = {
+        imageSrc: productSrc.value,
+        productDiscount: productDiscount.value,
+        productDate: productDate.value.toUpperCase(),
+        productName: productName.value,
+        productPrice: productPrice.value,
+        productRating: productRating.value,
+      };
+      PostApiData("data", productData);
+    } else {
+      alert("BOSLUQLARI DOLDUR! FILL THE GAPS");
+    }
   });
 
 // const updateProductSrc = document.querySelector("#updateProductSrc");

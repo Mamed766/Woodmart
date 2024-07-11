@@ -10,15 +10,6 @@
       "productRating": "3"
     },
     {
-      "id": "d43b",
-      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-8-0.jpg",
-      "productDiscount": "-15%",
-      "productDate": "",
-      "productName": "Peperomia Obtusifolia",
-      "productPrice": "66",
-      "productRating": "5"
-    },
-    {
       "id": "b2b9",
       "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-3-0.jpg",
       "productDiscount": "",
@@ -55,13 +46,13 @@
       "productRating": "3"
     },
     {
-      "id": "5668",
-      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-medium-2-0.jpg",
-      "productDiscount": "-25%",
+      "id": "6517",
+      "imageSrc": "https://woodmart.xtemos.com/plants/wp-content/uploads/sites/12/2023/05/w-indoor-plants-small-1-0-351x401.jpg",
+      "productDiscount": "30",
       "productDate": "NEW",
-      "productName": "Autumn Fern",
-      "productPrice": "48",
-      "productRating": "4"
+      "productName": "Guller",
+      "productPrice": "900",
+      "productRating": "5"
     }
   ]
 }
