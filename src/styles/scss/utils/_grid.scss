@@ -4,3 +4,10 @@
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   gap: 1.2rem;
 }
+
+.responsive-grid-view {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.2rem;
+}

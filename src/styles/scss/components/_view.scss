@@ -1,0 +1,66 @@
+.view {
+  padding: 2% 4%;
+
+  &__container {
+    &--title {
+      margin-bottom: 1rem;
+    }
+
+    &--cards {
+      &__card {
+        width: 15rem;
+        &--img {
+          cursor: pointer;
+          height: 15rem;
+          width: 15rem;
+          img {
+            object-fit: cover;
+            height: 15rem;
+            width: 15rem;
+          }
+          overflow: hidden;
+          position: relative;
+          &__overlay {
+            // visibility: hidden;
+            display: flex;
+            padding: 1rem;
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+            position: absolute;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            bottom: -200%;
+            opacity: 0;
+            transition: all 0.25s ease-in-out;
+
+            &--first {
+              display: flex;
+              color: white;
+              align-items: center;
+              gap: 0.5rem;
+              bottom: 20px;
+              position: absolute;
+            }
+            &--second {
+              color: white;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              right: 20px;
+              bottom: 20px;
+              position: absolute;
+            }
+          }
+          transition: all 0.25s ease-in-out;
+          &:hover {
+            .view__container--cards__card--img__overlay {
+              opacity: 1;
+              bottom: 0;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}
