@@ -10,6 +10,10 @@
     }
 
     &--cards {
+      padding: 2rem 0;
+      border-top: 2px solid $green;
+      border-bottom: 2px solid $green;
+
       &__card {
         display: flex;
         align-items: center;

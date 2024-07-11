@@ -839,6 +839,11 @@ body {
   font-size: 20px;
   padding-bottom: 2rem;
 }
+.articles__container--cards {
+  padding: 2rem 0;
+  border-top: 2px solid #5e6821;
+  border-bottom: 2px solid #5e6821;
+}
 .articles__container--cards__card {
   display: flex;
   align-items: center;
