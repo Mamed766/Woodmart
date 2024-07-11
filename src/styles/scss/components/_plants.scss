@@ -1,0 +1,74 @@
+.plants {
+  margin-top: 3rem;
+
+  &__container {
+    align-items: center;
+    flex-direction: column;
+
+    // &--flex {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+    // &--title {
+    //   display: flex;
+    //   justify-content: center;
+    //   padding-bottom: 2rem;
+    // }
+    &--title {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    &--cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      &__card {
+        cursor: pointer;
+        position: relative;
+
+        &--video {
+          position: relative;
+          width: 400px;
+          height: 500px;
+          overflow: hidden;
+          video {
+            width: 400px;
+            object-fit: cover;
+            height: 500px;
+          }
+
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+          }
+        }
+
+        &--content {
+          color: white;
+          padding: 1rem;
+          position: absolute;
+          bottom: 10px;
+
+          h5 {
+            color: gray;
+          }
+          button {
+            cursor: pointer;
+            color: white;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

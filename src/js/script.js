@@ -71,7 +71,7 @@ const renderProducts = (data) => {
         <div class="slider__dropdown">
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
           <button class="delete" data-id="${item.id}">Delete</button>
-          <button class="add__new--product__btn">New</button>
+          <button class="add__new--product__btn">Add New</button>
         </div>
         <div class="slider__image">
           <img src="${item.imageSrc}" alt="" />

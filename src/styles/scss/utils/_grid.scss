@@ -1,0 +1,6 @@
+.responsive-grid-plants {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 30rem));
+  gap: 1rem;
+}
