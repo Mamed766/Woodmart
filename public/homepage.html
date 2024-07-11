@@ -151,13 +151,21 @@
             <li>Login / Register</li>
             <li><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><i class="fa-regular fa-heart"></i><span>0</span></li>
-            <li>
+            <li id="cartIcon">
               <i class="fa-solid fa-bag-shopping"></i
-              ><span>0 / <span> $0.00</span> </span>
+              ><span class="payment">0 / $0.00</span>
             </li>
           </ul>
         </div>
       </nav>
+
+      <div id="cartModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Your Cart</h2>
+          <div id="cartItems"></div>
+        </div>
+      </div>
     </header>
     <main>
       <section class="introduction">
@@ -262,6 +270,14 @@
           <!-- <div class="swiper-pagination"></div> -->
         </div>
       </section>
+
+      <!-- <div id="cartModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Your Cart</h2>
+          <div id="cartItems"></div>
+        </div>
+      </div> -->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../src/js/swiper.js"></script>
