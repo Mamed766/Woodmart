@@ -1,0 +1,127 @@
+@use "../utils/" as *;
+
+.articles {
+  padding: 2% 4%;
+
+  &__container {
+    &--title {
+      font-size: 20px;
+      padding-bottom: 2rem;
+    }
+
+    &--cards {
+      &__card {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        &:hover {
+          .articles__container--cards__card--img img {
+            transform: scale(1.1);
+          }
+        }
+
+        &--img {
+          img {
+            object-fit: cover;
+            height: 15rem;
+            width: 22rem;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+          }
+          overflow: hidden;
+
+          position: relative;
+
+          &__content {
+            padding: 1rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            top: 0px;
+            position: absolute;
+
+            &--date {
+              font-weight: 600;
+              text-align: center;
+              width: 60px;
+              padding: 0 0;
+              background-color: white;
+            }
+
+            &--btn {
+              button {
+                cursor: pointer;
+                border: none;
+                background-color: $green;
+                color: white;
+                padding: 2px 4px;
+              }
+            }
+          }
+        }
+
+        &--content {
+          display: flex;
+          gap: 2rem;
+          flex-direction: column;
+          &__information {
+            color: gray;
+            &--first {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+
+              .mister {
+                cursor: pointer;
+                transition: all 0.25s ease-in-out;
+                &:hover {
+                  opacity: 0.9;
+                }
+              }
+              img {
+                border-radius: 2rem;
+              }
+            }
+
+            &--second {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              i {
+                cursor: pointer;
+              }
+            }
+            display: flex;
+            gap: 1rem;
+          }
+
+          &__name {
+            font-size: 23px;
+            width: 90%;
+
+            h2 {
+              transition: all 0.25s ease-in-out;
+              cursor: pointer;
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+
+        &--btn {
+          button {
+            width: 10rem;
+            cursor: pointer;
+            border: none;
+            background-color: $green;
+            color: white;
+            padding: 8px 16px;
+          }
+        }
+      }
+    }
+  }
+}
