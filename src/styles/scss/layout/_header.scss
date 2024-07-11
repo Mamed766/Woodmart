@@ -248,6 +248,10 @@
     border-bottom: 1px solid #e3e3e3;
 
     justify-content: space-between;
+
+    &--subtotal {
+      color: $green;
+    }
   }
 
   &__buttons {

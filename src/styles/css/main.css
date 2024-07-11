@@ -217,6 +217,9 @@ body {
   border-bottom: 1px solid #e3e3e3;
   justify-content: space-between;
 }
+.cash__total--subtotal {
+  color: #5e6821;
+}
 .cash__buttons {
   display: flex;
   gap: 0.5rem;
