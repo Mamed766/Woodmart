@@ -959,8 +959,14 @@ body {
 .view {
   padding: 2% 4%;
 }
+.view__container {
+  padding-bottom: 5rem;
+  border-bottom: 2px solid #5e6821;
+}
 .view__container--title {
+  font-size: 22px;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 .view__container--cards__card {
   width: 15rem;
