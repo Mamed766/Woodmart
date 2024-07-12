@@ -387,6 +387,7 @@ body {
 .introduction__card--list ul li {
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+  width: 17rem;
 }
 .introduction__card--list ul li:hover {
   color: #5e6821;
@@ -394,13 +395,11 @@ body {
 .introduction__card--list ul li i {
   transform: rotate(45deg);
 }
-
-.swiper {
-  width: 150rem;
+.introduction .swiper {
   height: 100%;
   cursor: grab;
 }
-.swiper__content {
+.introduction .swiper__content {
   position: absolute;
   display: flex;
   padding: 1.3rem;
@@ -412,10 +411,10 @@ body {
   left: 0;
   color: white;
 }
-.swiper__content p {
+.introduction .swiper__content p {
   font-size: 12px;
 }
-.swiper__content button {
+.introduction .swiper__content button {
   padding: 8px 16px;
   width: 9rem;
   border: none;
@@ -424,11 +423,10 @@ body {
   color: white;
   background-color: #565f1e;
 }
-.swiper__content button:hover {
+.introduction .swiper__content button:hover {
   opacity: 0.9;
 }
-
-.swiper-slide {
+.introduction .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -436,16 +434,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.swiper-slide img {
+.introduction .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.mySwiper {
-  width: 150rem;
+.introduction .mySwiper {
+  width: 150rem !important;
 }
 
 .products {
@@ -459,6 +455,7 @@ body {
 }
 
 .productSwiper {
+  cursor: grab;
   width: 100%;
   height: 100%;
   display: flex;
@@ -763,13 +760,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
-  height: 30%;
+  height: 30rem;
   width: 30rem;
   padding: 2rem 2rem;
   background-color: #e7e5d9;
 }
 .explore__container--cards__card--title {
   font-size: 26px;
+  word-wrap: break-word;
 }
 .explore__container--cards__card--author {
   border-top: 2px solid #5e6821;
@@ -790,7 +788,7 @@ body {
 }
 .explore__container--cards__card--second__video img {
   width: 50rem;
-  height: 25.3rem;
+  height: 30rem;
   object-fit: cover;
 }
 .explore__container--cards__card--second__video a {
@@ -1086,6 +1084,68 @@ body {
   opacity: 1;
   bottom: 0;
   visibility: visible;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar__hamburger {
+    display: flex !important;
+  }
+  .navbar__start {
+    display: none;
+  }
+  .navbar__end--list {
+    display: none !important;
+  }
+  .introduction__card--list {
+    display: none;
+  }
+  .introduction .mySwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    max-width: 1024px;
+    height: 40rem;
+  }
+  .articles .articles__container--cards__card--content__name {
+    width: 100%;
+  }
+  .footer__container--first {
+    width: 100%;
+  }
+  .footer__container--first img {
+    width: 50%;
+  }
+  .footer__container--first__desc {
+    width: 20rem;
+    font-size: 15px;
+  }
+  .footer__container--second {
+    width: 100%;
+  }
+}
+.navbar__hamburger {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .explore__container--title {
+    width: 100%;
+  }
+  .explore__container--title h1 {
+    font-size: 40px;
+  }
+  .explore__container--cards__card {
+    padding: 1rem 1rem;
+  }
+  .explore__container--cards__card--title {
+    font-size: 20px;
+  }
+  .explore__container--cards__card--second__video img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .explore__container--cards__card--second__video a {
+    font-size: 60px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

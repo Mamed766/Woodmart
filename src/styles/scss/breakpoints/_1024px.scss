@@ -1,0 +1,67 @@
+@media screen and (max-width: 1024px) {
+  // Navbar
+  .navbar {
+    &__hamburger {
+      display: flex !important;
+    }
+
+    &__start {
+      display: none;
+    }
+
+    &__end {
+      &--list {
+        display: none !important;
+      }
+    }
+  }
+
+  .introduction {
+    &__card {
+      &--list {
+        display: none;
+      }
+    }
+
+    .mySwiper {
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        max-width: 1024px;
+
+        height: 40rem;
+      }
+    }
+  }
+
+  .articles {
+    .articles__container--cards__card--content__name {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    &__container {
+      &--first {
+        width: 100%;
+
+        img {
+          width: 50%;
+        }
+
+        &__desc {
+          width: 20rem;
+          font-size: 15px;
+        }
+      }
+
+      &--second {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.navbar__hamburger {
+  display: none;
+}

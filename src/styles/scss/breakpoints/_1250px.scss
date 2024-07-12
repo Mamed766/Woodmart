@@ -1,0 +1,35 @@
+@media (max-width: 1250px) {
+  .explore {
+    &__container {
+      &--title {
+        width: 100%;
+        h1 {
+          font-size: 40px;
+        }
+      }
+
+      &--cards {
+        &__card {
+          // height: auto;
+          padding: 1rem 1rem;
+
+          &--title {
+            font-size: 20px;
+          }
+        }
+
+        &__card--second {
+          &__video {
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+            a {
+              font-size: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
