@@ -62,11 +62,14 @@ const addToCart = (product) => {
 };
 
 const renderProducts = (data) => {
-  swiperContainer.innerHTML = "";
+  if (swiperContainer) {
+    swiperContainer.innerHTML = "";
+  }
 
   data.forEach((item) => {
     console.log("Product Item:", item);
-    swiperContainer.innerHTML += `
+    if (swiperContainer) {
+      swiperContainer.innerHTML += `
       <div class="swiper-slide slider">
         <div class="slider__dropdown">
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -91,8 +94,8 @@ const renderProducts = (data) => {
           </p>
           <p class="product__price">$${item.productPrice}</p>
           <button class="product__button" data-id="${item.id}" data-name="${
-      item.productName
-    }" data-price="${item.productPrice}" data-image=${item.imageSrc}>
+        item.productName
+      }" data-price="${item.productPrice}" data-image=${item.imageSrc}>
             <div class="product__button--add">Add to Cart</div>
             <div class="product__button--shop">
               <i class="fa-solid fa-cart-shopping"></i>
@@ -101,6 +104,7 @@ const renderProducts = (data) => {
         </div>
       </div>
     `;
+    }
   });
 
   attachEventListeners();

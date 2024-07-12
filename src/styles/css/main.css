@@ -39,6 +39,14 @@ body {
   position: fixed;
   top: 0;
 }
+.navbar .shop__href {
+  display: flex;
+  gap: 0.5rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
 .navbar ul {
   list-style: none;
 }
