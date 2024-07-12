@@ -124,6 +124,10 @@
           display: flex;
           align-self: center;
           button {
+            a {
+              text-decoration: none;
+              color: white;
+            }
             width: 10rem;
             cursor: pointer;
             border: none;

@@ -1,0 +1,18 @@
+@media (max-width: 1050px) {
+  .blog__container--cards__second {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog__container--cards__second--second__img {
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .blog {
+    aside {
+      display: none;
+    }
+  }
+}

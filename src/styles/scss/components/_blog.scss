@@ -1,0 +1,281 @@
+@use "../utils/" as *;
+
+.blog {
+  margin-top: 7rem;
+  padding: 2% 4%;
+  display: flex;
+  gap: 1rem;
+  border-top: 2px solid $green;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    &--title {
+      padding-top: 2rem;
+      color: $green;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    &--cards {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+
+      &__desc {
+        p {
+          color: gray;
+        }
+      }
+
+      &__first {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &--content {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+
+          &__author {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: center;
+            color: gray;
+            img {
+              width: 1rem;
+              height: 1rem;
+
+              border-radius: 4rem;
+              object-fit: cover;
+            }
+          }
+
+          button {
+            cursor: pointer;
+            background-color: $green;
+            border: none;
+            color: white;
+            padding: 4px 8px;
+          }
+        }
+        p {
+          color: gray;
+        }
+
+        &--img {
+          img {
+            width: 100%;
+          }
+          position: relative;
+          &__content {
+            position: absolute;
+            width: 5rem;
+            padding: 0.5rem;
+            text-align: center;
+            background-color: white;
+            font-weight: 600;
+            left: 20px;
+            top: 20px;
+          }
+        }
+        &--desc {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          &__first {
+            font-size: 15px;
+          }
+
+          &__second {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            &--list {
+              ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+              }
+              margin-left: 1.2rem;
+              color: gray;
+            }
+          }
+        }
+      }
+
+      &__second {
+        display: flex;
+        gap: 2rem;
+        &--first {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 2rem;
+          width: 25rem; // Cardin widthi yasil olan
+
+          &__content {
+            ul {
+              color: gray;
+            }
+          }
+
+          &__card {
+            width: 100%;
+            height: 30rem;
+            padding: 2rem;
+
+            background-color: $palegreen;
+
+            &--content {
+              p {
+                font-weight: 600;
+                font-size: 25px;
+              }
+
+              padding-bottom: 5rem;
+              border-bottom: 2px solid $green;
+            }
+
+            &--author {
+              display: flex;
+              align-items: center;
+              margin-top: 2rem;
+              padding-top: 2rem;
+              gap: 2rem;
+
+              &__content {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                p {
+                  color: gray;
+                }
+              }
+            }
+          }
+
+          &__content {
+            width: 23.5rem;
+            margin-left: 1rem;
+          }
+        }
+
+        &--second {
+          &__img {
+            img {
+              height: 40rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__aside {
+    margin-top: 5rem;
+    &--container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      &__list {
+        border-bottom: 1px solid #e3e3e3;
+        padding-bottom: 2rem;
+        ul {
+          h3 {
+            font-size: 16px;
+          }
+          font-size: 14px;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          a {
+            color: gray;
+            text-decoration: none;
+          }
+        }
+      }
+
+      &__views {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-bottom: 1px solid #e3e3e3;
+        padding-bottom: 3rem;
+        gap: 1rem;
+        &__container {
+          //   width: 70%;
+          display: flex;
+          gap: 1rem;
+          flex-wrap: wrap;
+          &--view {
+            // width: 33%;
+            &__img {
+              height: 7rem;
+              position: relative;
+              cursor: pointer;
+
+              img {
+                object-fit: cover;
+                height: 7rem;
+              }
+
+              &:hover {
+                .overlay__blog {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &__posts {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &--container {
+          display: flex;
+          flex-direction: column;
+
+          &__post {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e3e3e3;
+            &--content {
+              display: flex;
+              flex-direction: column;
+              p {
+                color: gray;
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.overlay__blog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}

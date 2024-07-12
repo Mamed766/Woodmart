@@ -292,7 +292,11 @@
   }
 }
 
-aside {
+.aside {
+  // &__content {
+  //   // padding: 20px;
+  // }
+
   position: fixed;
   top: 0;
   left: -300px;
@@ -302,13 +306,6 @@ aside {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
   transition: left 0.3s ease;
   z-index: 9999;
-}
-
-.aside {
-  // &__content {
-  //   // padding: 20px;
-  // }
-
   &__buttons {
     display: flex;
     // justify-content: space-between;
