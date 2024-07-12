@@ -2,7 +2,10 @@
   // Navbar
   .navbar {
     &__hamburger {
+      font-size: 20px;
+      padding: 2rem;
       display: flex !important;
+      cursor: pointer;
     }
 
     &__start {
@@ -13,6 +16,15 @@
       &--list {
         display: none !important;
       }
+    }
+
+    .payment {
+      display: none;
+    }
+
+    #cartIcon {
+      font-size: 20px;
+      padding: 2rem;
     }
   }
 

@@ -289,35 +289,34 @@ productCreateBtn &&
     }
   });
 
-// const updateProductSrc = document.querySelector("#updateProductSrc");
-// const updateProductDiscount = document.querySelector("#updateProductDiscount");
-// const updateProductDate = document.querySelector("#updateProductDate");
-// const updateProductName = document.querySelector("#updateProductName");
-// const updateProductPrice = document.querySelector("#updateProductPrice");
-// const updateProductRating = document.querySelector("#updateProductRating");
+document.querySelector(".navbar__hamburger").addEventListener("click", () => {
+  document.querySelector("aside").classList.add("open");
+  document.querySelector(".overlay2").style.display = "block";
+});
 
-// const updateProductBtn = document.querySelectorAll(".update__product--btn");
-// const updateProductButton = document.querySelector("#updateProductButton");
+// document.querySelector(".navbar__close").addEventListener("click", () => {
+//   document.querySelector("aside").classList.remove("open");
+//   document.querySelector(".overlay2").style.display = "none";
+// });
 
-// updateProductButton &&
-//   updateProductButton.addEventListener("click", (e) => {
-//     e.preventDefault();
+document.querySelector(".overlay2").addEventListener("click", () => {
+  document.querySelector("aside").classList.remove("open");
+  document.querySelector(".overlay2").style.display = "none";
+});
 
-//     const updateProductData = {
-//       imageSrc: updateProductSrc.value,
-//       productDiscount: updateProductDiscount.value,
-//       productDate: updateProductDate.value,
-//       productName: updateProductName.value,
-//       productPrice: updateProductPrice.value,
-//       productRating: updateProductRating.value,
-//     };
+document.getElementById("categoriesBtn").addEventListener("click", () => {
+  document.getElementById("categoriesBtn").classList.add("active");
+  document.getElementById("menuBtn").classList.remove("active");
+  document.getElementById("categoriesList").style.display = "block";
+  document.getElementById("menuList").style.display = "none";
+});
 
-//     let productId = updateProductBtn.forEach((btn) => {
-//       btn.getAttribute("data-set");
-//     });
-
-//     updateApiDataById("data", productId, updateProductData);
-//   });
+document.getElementById("menuBtn").addEventListener("click", () => {
+  document.getElementById("menuBtn").classList.add("active");
+  document.getElementById("categoriesBtn").classList.remove("active");
+  document.getElementById("categoriesList").style.display = "none";
+  document.getElementById("menuList").style.display = "block";
+});
 
 /* <button data-set=${
   item?.id
