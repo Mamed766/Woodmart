@@ -1096,6 +1096,9 @@ body {
   .navbar__end--list {
     display: none !important;
   }
+  .modal-content {
+    width: 70%;
+  }
   .introduction__card--list {
     display: none;
   }
