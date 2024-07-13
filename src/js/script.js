@@ -21,17 +21,6 @@ const PostApiData = async (endPoint, data) => {
   return response;
 };
 
-// const updateApiDataById = async (endPoint, id, data) => {
-//   let response = await fetch(`${BaseURL}/${endPoint}/${id}`, {
-//     method: "PUT",
-//     body: JSON.stringify(data),
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//   });
-//   return response;
-// };
-
 const DeleteApiDataById = async (endPoint, id) => {
   let response = await fetch(`${BaseURL}/${endPoint}/${id}`, {
     method: "DELETE",
@@ -298,11 +287,6 @@ document.querySelector(".navbar__hamburger").addEventListener("click", () => {
   document.querySelector(".overlay2").style.display = "block";
 });
 
-// document.querySelector(".navbar__close").addEventListener("click", () => {
-//   document.querySelector("aside").classList.remove("open");
-//   document.querySelector(".overlay2").style.display = "none";
-// });
-
 document.querySelector(".overlay2").addEventListener("click", () => {
   document.querySelector("aside").classList.remove("open");
   document.querySelector(".overlay2").style.display = "none";
@@ -321,7 +305,3 @@ document.getElementById("menuBtn").addEventListener("click", () => {
   document.getElementById("categoriesList").style.display = "none";
   document.getElementById("menuList").style.display = "block";
 });
-
-/* <button data-set=${
-  item?.id
-} class="update__product--btn">Update</button> */
