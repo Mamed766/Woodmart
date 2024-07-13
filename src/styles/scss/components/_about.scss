@@ -89,3 +89,43 @@
     }
   }
 }
+
+.aboutSwiper {
+  margin-top: 3rem;
+  img {
+    cursor: pointer;
+  }
+
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    .swiper-button-next,
+    .swiper-button-prev {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $green;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: #bbbbbb;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}

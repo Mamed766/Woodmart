@@ -1550,6 +1550,42 @@ aside.open {
   border-bottom: 2px solid #5e6821;
 }
 
+.aboutSwiper {
+  margin-top: 3rem;
+  transition: all 0.25s ease-in-out;
+}
+.aboutSwiper img {
+  cursor: pointer;
+}
+.aboutSwiper:hover .swiper-button-next,
+.aboutSwiper:hover .swiper-button-prev {
+  opacity: 1;
+  visibility: visible;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #5e6821;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: #bbbbbb;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
 @media screen and (max-width: 1024px) {
   .navbar__hamburger {
     font-size: 20px;
