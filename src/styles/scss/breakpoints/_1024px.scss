@@ -115,6 +115,25 @@
       }
     }
   }
+
+  .contact__container--start {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &__second {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .contact__places--name {
+    display: none;
+  }
+
+  .contact__places--info {
+    gap: 5rem;
+  }
 }
 
 .navbar__hamburger {

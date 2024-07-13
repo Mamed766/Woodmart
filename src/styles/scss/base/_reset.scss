@@ -11,18 +11,6 @@ body {
   background-color: $bodyColor;
 
   scrollbar-width: thin;
-
-  // ::-webkit-scrollbar-track {
-  //   background-color: #404040;
-  // }
-
-  // ::-webkit-scrollbar-thumb {
-  //   background-color: #737272;
-  //   border-radius: 10px;
-  //   border: 1px solid #000;
-  //   width: 2px !important;
-  // }
-  // scrollbar-color: $green #729762;
 }
 
 ::-webkit-scrollbar {

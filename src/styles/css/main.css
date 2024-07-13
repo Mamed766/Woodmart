@@ -516,6 +516,113 @@ aside.open {
   background-color: #5e6821;
 }
 
+.contact {
+  margin-top: 7rem;
+  padding: 2% 4%;
+}
+.contact__container {
+  border-top: 2px solid #5e6821;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #5e6821;
+}
+.contact__container--title {
+  color: #5e6821;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact__container--start {
+  display: flex;
+  gap: 5rem;
+}
+.contact__container--start__first {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact__container--start__first h1 {
+  font-size: 50px;
+}
+.contact__container--start__first p span {
+  color: gray;
+}
+.contact__container--start__first p span:last-child {
+  color: #5e6821 !important;
+}
+.contact__container--start__first button {
+  cursor: pointer;
+  padding: 8px 16px;
+  color: white;
+  background-color: #5e6821;
+  border: none;
+}
+.contact__container--start__first ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.contact__container--start__first ul li {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #5e6821;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+  transition: all 0.25s ease-in-out;
+}
+.contact__container--start__first ul li i {
+  color: #5e6821;
+}
+.contact__container--start__first ul li:hover {
+  background-color: #5e6821;
+}
+.contact__container--start__first ul li:hover i {
+  color: white;
+}
+.contact__container--start__second--img img {
+  width: 80%;
+}
+.contact__places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.contact__places--title {
+  font-size: 36px;
+  position: relative;
+}
+.contact__places--title i {
+  position: absolute;
+  top: 15px;
+  font-size: 20px;
+  transform: rotate(45deg);
+}
+.contact__places--info {
+  display: flex;
+  gap: 15rem;
+}
+.contact__places--info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+.contact__places--info__second {
+  color: gray;
+}
+
+.otherplace {
+  padding: 4rem 0;
+  border-top: 2px solid #5e6821;
+  border-bottom: 2px solid #5e6821;
+}
+
 .introduction {
   padding: 10% 7.5%;
 }
@@ -1783,6 +1890,19 @@ aside.open {
   .testimonials__container--imgs img {
     transform: scale(1.1);
     width: 100%;
+  }
+  .contact__container--start {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact__container--start__second img {
+    width: 100%;
+  }
+  .contact__places--name {
+    display: none;
+  }
+  .contact__places--info {
+    gap: 5rem;
   }
 }
 .navbar__hamburger {
