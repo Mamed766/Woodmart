@@ -1,0 +1,91 @@
+@use "../utils/" as *;
+
+.about {
+  margin-top: 6rem;
+  padding: 1% 4.5%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    border-top: 2px solid $green;
+
+    &--first {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding-top: 1rem;
+
+      &__title {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        h3 {
+          font-size: 26px;
+          color: $green;
+        }
+
+        h1 {
+          font-size: 36px;
+        }
+      }
+
+      &__img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 80%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &--second {
+      display: flex;
+      gap: 15%;
+      &__desc {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        gap: 1rem;
+        h2 {
+          font-size: 36px;
+        }
+        p {
+          font-size: 13px;
+          color: gray;
+        }
+      }
+
+      &__dates {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        &--date {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+          border-top: 2px solid $green;
+          padding: 1rem 0;
+
+          h3 {
+            font-size: 26px;
+          }
+
+          h2 {
+            color: #bbbbbb;
+            font-size: 45px;
+          }
+
+          &:last-child {
+            border-bottom: 2px solid $green;
+          }
+        }
+      }
+    }
+  }
+}

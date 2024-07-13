@@ -76,6 +76,19 @@
       }
     }
   }
+
+  .about__container--second {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &__desc {
+      width: 100%;
+    }
+
+    &__dates {
+      width: 100%;
+    }
+  }
 }
 
 .navbar__hamburger {
