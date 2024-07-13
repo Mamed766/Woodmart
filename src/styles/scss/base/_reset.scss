@@ -9,4 +9,35 @@
 
 body {
   background-color: $bodyColor;
+
+  scrollbar-width: thin;
+
+  // ::-webkit-scrollbar-track {
+  //   background-color: #404040;
+  // }
+
+  // ::-webkit-scrollbar-thumb {
+  //   background-color: #737272;
+  //   border-radius: 10px;
+  //   border: 1px solid #000;
+  //   width: 2px !important;
+  // }
+  // scrollbar-color: $green #729762;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $green;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background: #729762;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #658c55;
 }
