@@ -70,3 +70,20 @@
     }
   }
 }
+
+.totoptag {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99999;
+}
+
+.ttop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: white;
+  height: 3rem;
+  width: 3rem;
+}
